@@ -1,4 +1,4 @@
-# hepaijie-cli
+# uni-template
 
 ## 启动项目前，安装依赖包
 ```
