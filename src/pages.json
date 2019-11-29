@@ -1,0 +1,52 @@
+{
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "首页"
+      }
+    },
+    {
+      "path": "pages/personal/index",
+      "style": {
+        "navigationBarTitleText": "个人中心"
+      }
+    }
+  ],
+  "subPackages": [
+    {
+      "root": "subpages",
+      "pages": [
+        {
+          "path": "public/webview"
+        }
+      ]
+    }
+  ],
+  "globalStyle": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#fff"
+  },
+  "tabBar": {
+    "color": "#D5D5D5",
+    "selectedColor": "#333333",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "static/images/icon_home.png",
+        "selectedIconPath": "static/images/icon_home_active.png"
+      },
+      {
+        "pagePath": "pages/personal/index",
+        "text": "个人",
+        "iconPath": "static/images/icon_person.png",
+        "selectedIconPath": "static/images/icon_person_active.png"
+      }
+    ]
+  }
+}
