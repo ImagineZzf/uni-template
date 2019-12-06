@@ -294,3 +294,15 @@ export const chooseImage = (options = {}) => {
     ...options
   })
 }
+/**
+ * 跳转页面
+ */
+export const navToView = link => {
+  if (link.includes('http')) {
+    // 跳转webview
+    navigate(`/subpages/public/webview?link=${JSON.stringify(link)}`)
+  } else if (link.includes('/pages') || link.includes('/subpages')) {
+    // 跳转普通页面
+    navigate(link)
+  }
+}
